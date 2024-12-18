@@ -1,0 +1,69 @@
+
+*{  /* 전체 선택자 : 모든 곳에 적용 */
+    
+    /* 작업 종료 후 제거 */
+    border: 1px solid red;
+
+    /* 기본 여백 제거 */
+    margin: 0px;
+    padding: 0px;
+
+    /* box-sizing 
+        1. border-box : 구역 크기를 안쪽 여백가 테두리 크기를 포함한 크기 설정
+            - width/height 사이즈가 내용물 + 안쪽여백(padding) + 테두리(border) 기준으로 설정
+        2. content-box : (기본값) 구역 크기를 안쪽 여백을 제외한 내용을 안으로 크기 설정
+            - width/height 사이즈가 내용물을 기준으로 설정
+    */
+    /* 구역내용물 + 안쪽여백 + 테두리크기 = width/heignt 설정 */
+    box-sizing: border-box;
+
+}
+
+#wrap{      /* .클래스명{}  #id명{} */
+
+        /* 페이지의 전체 사이즈 : pc는 주로 1100-1300px, 모바일 : 400px 이하, pc + 모바일 => 반응형 % */
+        width: 1280px;    
+        
+        /* 구역 가로 가운데 정열 */
+        margin: 0 auto;
+    }
+
+#header{    /* 헤더 구역 */
+    
+    /* 작업 종료 후 제거 */
+    height: 200px;
+
+    /* 일반적으로 웹페이지의 레이아웃 높이는 설정하지 않는다. */
+}
+
+#main{
+
+    /* 작업 종료 후 제거 */
+    height: 500px;
+
+    /* 하위 요소(본문/사이드바) 들을 배치하는 방법 설정 */
+    display: flex;
+    /* [기본값/생략가능] 만일 하위 요소가 더 크면 자식요소 크기 자동맞춤 */
+    flex-wrap: nowrap;
+    /* [기본값/생략가능] 하위 요소들을 가로 방향 배치 */
+    flex-direction: row;
+    /* 양쪽 끝에 여백없이 사이 균등 정렬 */
+    justify-content: space-between;
+}
+
+#content{
+    
+    /* 상위요소의 사이즈가 1280px이므로 800px 사용하면 480px 이 남는다. */
+    width: 800px;
+}
+
+#sidebar{
+
+    /* 상위요소의 사이즈가 1280px 에서 형제요소가 800px 사용했으므로 480px에서 450px 사용 */
+    width: 450px;
+
+}
+
+#footer{
+    height: 100px;
+}

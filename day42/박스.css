@@ -1,0 +1,89 @@
+/* CSS 주석 */
+/* 마크업 1개당 1개의 구역을 갖는다 */
+
+/* 1. 전체선택자 */
+*{
+    /* 구역 테두리 : 선굵기 선종류 선색상 */
+    border: 1px solid red;      
+}
+
+/* 2. 마크업선택자 */
+html{ border: 3px solid yellow; }
+body{ border: 5px solid navy; }
+
+/* 3. class 선택자 */
+.box1{
+    border: 4px solid pink;
+}
+
+.box2{
+    /* 선종류 : solid 실선, dotted 실선, dashed 파선, double 이중선 */
+    border-top: 1px solid orange;
+    border-right: 2px dotted skyblue;
+    border-bottom: 3px dashed black;
+    border-left: 4px double green;
+
+    /* 둥근 모서리, 단위 px */
+    border-radius: 10px;
+
+    /* 구역 그림자 */
+    box-shadow: 3px 3px 3px orange;
+
+    /* 구역 내 내용물이 가로 가운데 정렬 */
+    text-align: center;
+
+    /* 구역의 가로 사이즈 */
+    width: 400px;   
+
+    /* 구역의 세로 사이즈 */
+    height: 300px;
+}
+
+.box3{
+    /* [안쪽여백] 테투리와 구역내 내용물의 사이 여백 */
+    padding: 50px;
+
+    /* [바깥여백] 테투리와 다른 구역의 사이 여백 */
+    margin: 30px;
+}
+
+.box4{
+    /* 구역 가로 크기 */
+    width: 100px;
+
+    /* [안쪽여백] 위 오른쪽 아래 왼쪽 */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+    /* [바깥여백] 위 오른쪽 아래 왼쪽 */
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    /* 구역의 배경색 */
+    background-color: lightblue;
+
+    /* 크롬, 인터넷에서 F12 눌러서 개발자도구로 CSS 확인하기 */
+}
+
+.box5{
+    /* width 생략시 기본값으로 100& 설정된다 */
+    width: 300px;
+
+    /* 지정한 선택자의 구역을 가로 가운데 정렬 */
+    margin: 0 auto;
+
+    /* 지정한 선택지의 내용물(content) 을 가로 가운데 정렬 */
+    text-align: center;
+}
+
+#block1{
+    background-color: lavender;
+}
+
+#block2{
+    background-color: lightcoral;
+}
