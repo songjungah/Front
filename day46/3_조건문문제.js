@@ -28,4 +28,3 @@ if(num4 > num5) {
 let num6 = Number(prompt(`정수 : `));
 let num7 = Number(prompt(`정수 : `));
 let num8 = Number(prompt(`정수 : `));
-

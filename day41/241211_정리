@@ -1,0 +1,37 @@
+IDE(vscode) 설치
+1. 구글에 'vscode' 검색
+2. [download for windows] 클릭 -> 다운로드 진행
+3. 다운로드 된 폴더에 VSCodeUserSetup-x64-1.95.3exe 클릭
+4. [동의] -> [다음] -> 추가작업(모두체크) -> [다음] -> [설치]
+5. 완료 했으면 [종료]
+
+프로젝트 폴더 생성
+1. 개인폴더에 'kor2024_ja' (임의)로 폴더 생성
+
+- vscode 에서 방금 생성한 폴더를 프로젝트로 불러오기
+1. vscode 상단메뉴 -> [file] -> [open folder] -> 방금 생성한 폴더 선택
+2. vscode 왼쪽 사이드바메뉴 -> [탐색기] 클릭 -> 선택한 폴더가 있는지 확인
+
+HTML 파일 생성
+1. 파일 생성할 폴더 위치를 오른쪽 클릭 -> [new]
+2. 파일명을 '파일명.html' 입력한다.
+3. 빈 html 파일에 ctrl + 스페이스바 -> 아래방향키 -> 엔터
+
+==================================================================
+
+[권장하는 플러그인 설치]
+1.vscode 한글패치
+    1) vscode 왼쪽사이드바 메뉴 -> [extenstions]
+    2) 검색란 'kor' -> korean languege pack [install]
+    3) vscode 재실행
+
+2. 라이브서버 설치, HTML/CSS 파일을 IP 로 확인 가능 : 코드 수정시 바로바로 적용
+    1) vscode 왼쪽사이드바 메뉴 -> [extenstions]
+    2) 검색란 'live' -> 'live server' [install]
+    3) vscode 재실행
+    4) 사용 : 특정한 html 파일에서 오른쪽 클릭 -> [open with live server]
+
+[권장하는 설정]
+1. vscode 왼쪽 사이드바메뉴 하단에 [관리]
+    - [테마] 선택 > 원하는 테마 선택
+    - [설정] 선택 > AUTO SAVE Delay(자동저장)
