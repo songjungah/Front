@@ -1,0 +1,60 @@
+    <!--
+    JS과제5 (day49) : 함수 활용.
+    - 출력조건 : document.querySelector().innerHTML 
+    - 입력조건 : document.querySelector().value
+    - 일반조건 : chatGPT 사용금지
+
+    선택1 (어려운분들) : 회원가입, 로그인 html/js 를 따라치기 5번
+    선택2 (활용)
+        1. 회원가입시 아이디 중복검사, 이미 등록된 아이디이면 회원가입 실패, 유효성 검사
+        2. 회원가입시 비밀번호 유효성검사, 비밀번호는 최소 5~10 글자 이내로 입력 제한 하시오
+        3. 로그인시 성공시 상단에 로그인 성공한 회원의 닉네임을 출력하시오. 
+            로그인 전 : <div class = "LoginNicName"> </div>
+            로그인 후 : <div class = "LoginNicName"> ~님 로그인중 </div>
+        4. 로그인 화면 아래 현재 로그인된 회원들의 명단 출력하시오. 모든 회원[배열]의 아이디와 닉네임만 출력하시오.
+            <div class="memberListBox">
+                <h3>회원명단</h3>
+            </div>
+
+    - 정답이 필요한 경우 메일/카톡 로 요청하기. 
+    - 제출 : itdanja@kakao.com , 12/23(월) 19:00까지
+    - 제출파일 : 구현한 JS 파일 및 파일이 위치한 본인 github 상세 주소
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='3_객체활용과제.js'></script>
+</head>
+<body>
+
+    <div>
+        <!-- div는 html 에서 레이아웃/구역을 나눌 때 사용되는 마크업 -->
+        <!-- h3는 html 에서 제목 표현할 때 사용되는 마크업 -->
+        <h3>회원가입</h3>
+        <!-- input 마크업은 입력상자 마크업 -->
+        아이디 : <input class="signid" placeholder="아이디를 입력해주세요."/> <br />
+        비밀번호 : <input class="signpw" type="password" placeholder="비밀번호를 입력해주세요."/> <br />
+        닉네임 : <input class="signnic" type="text" placeholder="닉네임을 입력해주세요."/> <br />
+        <button onclick="signUp()">회원가입</button>
+    </div>
+
+    <div>
+        <h3>로그인</h3>
+        아이디 : <input class="loginid" type="text" placeholder="아이디를 입력해주세요."/> <br />
+        비밀번호 : <input class="loginpw" type="password" placeholder="비밀번호를 입력해주세요."/> <br />
+        <button onclick="login()">로그인</button>
+    </div>
+
+    <div class="memberListBox">
+        <h3>회원명단</h3>
+    </div>
+
+    
+</body>
+</html>
